@@ -2,6 +2,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-ExtraBold.otf);
 }
 
 /*# sourceMappingURL=style.css.map */
