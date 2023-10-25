@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,27 +10,41 @@
     <div class="wrapper">
       <div class="container">
         <header class="header">
-          <h1 class="header__title">LOGOS</h1>
-          <div class="header__search">
-            <img
-              src="./img/icons/Location.svg"
-              alt=""
-              class="header__location"
-            />
-            <label
-              ><input
-                class="search__field"
-                type="search"
-                placeholder="Введите адрес доставки"
-            /></label>
-            <img
-              src="./img/icons/Search.svg"
-              alt=""
-              class="header__search-btn"
-            />
+          <div class="header-box1">
+            <h1 class="header__title">LOGOS</h1>
+            <div class="header__search">
+              <img
+                src="./img/icons/Location.svg"
+                alt=""
+                class="header__location"
+              />
+              <label
+                ><input
+                  class="search__field"
+                  type="search"
+                  placeholder="Введите адрес доставки"
+              /></label>
+              <img
+                src="./img/icons/Search.svg"
+                alt=""
+                class="header__search-btn"
+              />
+            </div>
           </div>
-          <div class="header__phone-number">Контакты: +7 (917) 510-57-59</div>
-          <button class="header__btn">Корзина</button>
+          <div class="header-box2">
+            <div class="header__phone-number">
+              <img class="contact" src="img/icons/Calling.svg" alt="">
+              <div>
+                <p>Контакты:</p>
+                <b>+7 (917) 510-57-59</b>
+              </div>
+            </div>
+            <button class="header__btn">
+              <b>Корзина</b>
+              <span class="line"></span>
+              <span class="btn__contact">4</span>
+            </button>
+          </div>
         </header>
       </div>
     </div>
