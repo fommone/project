@@ -123,6 +123,7 @@ body {
 
 .banner {
   margin-top: 44px;
+  margin-left: 117px;
 }
 
 .banner__content {
@@ -144,7 +145,7 @@ body {
 
 .banner__title {
   color: #FFF;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
@@ -156,6 +157,112 @@ body {
 
 .banner__card-img {
   border-radius: 10px 0px 0px 10px;
+}
+
+.banner__card-items {
+  display: flex;
+  border-radius: 10px;
+  background: #504B4A;
+  max-width: 1210px;
+  max-height: 399px;
+}
+
+.banner__card-desc {
+  margin-top: 38px;
+  margin-left: 50px;
+}
+
+.banner__card-title {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.banner__card-paragraph {
+  max-width: 450px;
+}
+
+.banner__card-info {
+  color: #CFCFCF;
+  font-family: "Gilroy-light";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.banner__card-kilo {
+  margin-top: 113px;
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.banner__card-buyandprice {
+  display: flex;
+  gap: 25px;
+}
+
+.banner__btn {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gilroy-light";
+  gap: 25px;
+  background: #618967;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 35px;
+}
+
+.banner__card-price {
+  margin-top: 35px;
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.banner__card-organic-matters {
+  display: flex;
+  margin-top: 30px;
+  gap: 50px;
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.banner__card-matters-quantity {
+  display: flex;
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.banner__card-fat-quantity {
+  margin-left: 60px;
+}
+
+.banner__card-carbohydrate-quantity {
+  margin-left: 63px;
+}
+
+.banner__card-kcal-quantity {
+  margin-left: 75px;
+}
+
+.banner__card-weight-quantity {
+  margin-left: 57px;
 }
 
 /*# sourceMappingURL=style.css.map */
