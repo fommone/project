@@ -3,9 +3,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
+  background: #44403F;
 }
 
-container {
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -14,20 +15,76 @@ container {
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-ExtraBold.otf);
 }
-.search__field {
-  border: none;
-  outline: none;
-  background: none;
+.header {
+  display: flex;
+  margin-top: 29px;
 }
 
 .header__search {
   display: flex;
   max-width: 555px;
   align-items: center;
-  justify-content: space-between;
   padding: 14px 17px;
   border-radius: 10px;
   background: #504B4A;
+}
+
+.search__field {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.header__phone-number {
+  display: flex;
+  align-items: center;
+  max-width: 136px;
+}
+
+.btn {
+  display: flex;
+  background: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
+  max-width: 149px;
+  padding: 18px 13px 18px 24px;
+}
+
+.header__btn {
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.basket__ellipse {
+  display: inline-flex;
+  background: #fff;
+  color: #403C3B;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.banner {
+  display: flex;
+  margin-top: 44px;
+  gap: 20px;
+}
+
+.banner__arrow {
+  background: #618967;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  padding: 10px 25px;
+}
+
+.banner__title {
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
