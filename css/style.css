@@ -108,12 +108,21 @@ body {
   font-family: "Gilroy-light";
 }
 
-.svg-box {
-  width: 50px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
-
-.arrow {
-  padding: 10px;
+.navbar .nav__link {
+  text-decoration: none;
+  list-style: none;
+  color: #CFCFCF;
+  font-size: 18px;
+  font-family: "Gilroy-light";
+}
+.navbar .nav__link:hover {
+  border-bottom: 2px solid #16a81b;
 }
 
 /*# sourceMappingURL=style.css.map */
