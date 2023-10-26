@@ -51,6 +51,18 @@ body {
   border-radius: 10px;
   background: #504B4A;
 }
+@media screen and (max-width: 660px) {
+  .header__search {
+    flex-basis: 100%;
+    order: 2;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .header__search {
+    margin-top: 5px;
+  }
+}
 
 .header {
   display: flex;
@@ -60,49 +72,12 @@ body {
   gap: 50px;
   height: 100px;
 }
-@media screen and (max-width: 930px) {
-  .header .btn__contact {
-    display: none;
-  }
-  .header .line {
-    display: none;
-  }
-  .header .header__btn {
-    padding: 20px 10px;
-  }
-  .header .contact {
-    display: none;
-  }
-  .header .hamburger {
-    display: block;
-  }
-  .header .header__menu {
-    display: block;
-  }
-  .header .header__phone-number {
-    display: none;
-  }
-}
 @media screen and (max-width: 660px) {
   .header {
+    margin-top: 27px;
     flex-wrap: wrap;
     gap: 10px;
   }
-  .header .header-box1, .header .header-box2 {
-    gap: 10px;
-  }
-  .header .header__search {
-    flex-basis: 100%;
-    order: 2;
-  }
-}
-
-.header-box1, .header-box2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-  gap: 50px;
 }
 
 .header__phone-number {
@@ -110,10 +85,21 @@ body {
   font-family: "Gilroy-light";
   gap: 15px;
 }
+@media screen and (max-width: 930px) {
+  .header__phone-number {
+    display: none;
+  }
+}
 
-.header__phone-number b,
+.header__phone-number, .btn__basket,
 .header__title {
   font-family: "Gilroy";
+}
+@media screen and (max-width: 300px) {
+  .header__phone-number, .btn__basket,
+  .header__title {
+    margin-right: 50px;
+  }
 }
 
 .contact {
@@ -121,18 +107,66 @@ body {
   padding: 10px;
   border-radius: 50%;
 }
+@media screen and (max-width: 930px) {
+  .contact {
+    display: none;
+  }
+}
 
-.btn__contact {
-  background: #ffffff;
-  color: #618967;
-  padding: 10px 13px;
-  border-radius: 50%;
+@media screen and (min-width: 930px) {
+  .btn__contact {
+    position: absolute;
+    right: 5px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .btn__contact {
+    background: #ffffff;
+    color: #618967;
+    padding: 10px 13px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .btn__contact {
+    display: none;
+  }
 }
 
 .line {
+  display: none;
   min-height: 40px;
   width: 2px;
   background: white;
+}
+@media screen and (min-width: 930px) {
+  .line {
+    display: inline;
+    position: absolute;
+    right: 45px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .line {
+    display: inline;
+    min-height: 63px;
+    position: absolute;
+    left: 40px;
+    transform: rotate(90deg);
+    opacity: 0.3;
+  }
+}
+
+.btn__svg {
+  display: none;
+}
+@media screen and (max-width: 930px) {
+  .btn__svg {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+  }
 }
 
 .header__btn {
@@ -145,11 +179,48 @@ body {
   color: white;
   border: none;
   border-radius: 15px;
-  padding: 5px 20px;
+  padding: 30px 60px;
+}
+@media screen and (min-width: 930px) {
+  .header__btn {
+    position: relative;
+  }
+}
+@media screen and (max-width: 930px) {
+  .header__btn {
+    padding: 40px 40px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 300px) {
+  .header__btn {
+    margin-top: 10px;
+  }
+}
+
+.btn__basket {
+  position: absolute;
+}
+@media screen and (min-width: 930px) {
+  .btn__basket {
+    position: absolute;
+    left: 15px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .btn__basket {
+    top: 50px;
+    left: 15px;
+  }
 }
 
 .wrapper {
   border-bottom: 1px solid grey;
+}
+@media screen and (max-width: 660px) {
+  .wrapper {
+    border-bottom: none;
+  }
 }
 
 ::placeholder {
@@ -289,6 +360,11 @@ body {
   display: none;
   position: relative;
 }
+@media screen and (max-width: 930px) {
+  .hamburger {
+    display: block;
+  }
+}
 
 .header__menu {
   display: none;
@@ -296,38 +372,29 @@ body {
   top: 65px;
   left: 29px;
 }
+@media screen and (max-width: 930px) {
+  .header__menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 300px) {
+  .header__menu {
+    top: 70px;
+  }
+}
 
 .banner {
   margin-top: 44px;
 }
-@media screen and (max-width: 1060px) {
-  .banner .banner__card-desc {
-    margin-left: 10px;
-  }
-  .banner .banner__card-buyandprice {
-    gap: 5px;
-  }
-}
 @media screen and (max-width: 930px) {
-  .banner .banner {
+  .banner {
     justify-content: center;
   }
-  .banner .banner__card-items {
-    display: block;
-    max-width: 599px;
-    max-height: 1000px;
-  }
-  .banner .banner__card-kilo {
-    margin-top: 80px;
-  }
-  .banner .banner__card-matters-quantity {
-    padding-bottom: 20px;
-  }
-  .banner .banner__card-line {
-    margin-left: 0;
-  }
-  .banner .banner__card-img {
-    border-radius: 10px 10px 0px 0px;
+}
+@media screen and (max-width: 300px) {
+  .banner {
+    margin-top: 110px;
+    position: relative;
   }
 }
 
@@ -345,7 +412,14 @@ body {
   height: 36px;
   background: #618967;
   border-radius: 50%;
-  color: #fff;
+}
+@media screen and (max-width: 300px) {
+  .banner__arrow {
+    opacity: 0.8;
+    position: absolute;
+    top: 34px;
+    left: 24px;
+  }
 }
 
 .banner__title {
@@ -354,6 +428,11 @@ body {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
+}
+@media screen and (max-width: 300px) {
+  .banner__title {
+    display: none;
+  }
 }
 
 .banner__card {
@@ -364,24 +443,47 @@ body {
   max-width: 599px;
   max-height: 399px;
 }
+@media screen and (max-width: 930px) {
+  .banner__card-picture {
+    max-width: 899px;
+    max-height: 899px;
+  }
+}
 
 .banner__card-img {
   width: 100%;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
+@media screen and (max-width: 930px) {
+  .banner__card-img {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
 
 .banner__card-items {
   display: flex;
   border-radius: 10px;
   background: #504B4A;
-  max-width: 1210px;
+  max-width: 1410px;
   max-height: 399px;
+}
+@media screen and (max-width: 930px) {
+  .banner__card-items {
+    display: block;
+    max-width: 899px;
+    max-height: 1000px;
+  }
 }
 
 .banner__card-desc {
   margin-top: 38px;
   margin-left: 50px;
+}
+@media screen and (max-width: 1060px) {
+  .banner__card-desc {
+    margin-left: 10px;
+  }
 }
 
 .banner__card-title {
@@ -412,10 +514,20 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+@media screen and (max-width: 930px) {
+  .banner__card-kilo {
+    margin-top: 80px;
+  }
+}
 
 .banner__card-buyandprice {
   display: flex;
   gap: 25px;
+}
+@media screen and (max-width: 1060px) {
+  .banner__card-buyandprice {
+    gap: 5px;
+  }
 }
 
 .banner__btn {
@@ -461,6 +573,11 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+@media screen and (max-width: 930px) {
+  .banner__card-line {
+    margin-left: 0;
+  }
+}
 
 .banner__card-matters-quantity {
   display: grid;
@@ -470,6 +587,11 @@ body {
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
+}
+@media screen and (max-width: 930px) {
+  .banner__card-matters-quantity {
+    padding-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

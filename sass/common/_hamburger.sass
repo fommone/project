@@ -88,8 +88,14 @@
 .hamburger
     display: none
     position: relative
+    @media screen and (max-width: 930px)
+        display: block
 .header__menu
     display: none
     position: absolute
     top: 65px
     left: 29px
+    @media screen and (max-width: 930px)
+        display: block
+    @media screen and (max-width: 300px)
+        top: 70px
