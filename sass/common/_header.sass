@@ -12,7 +12,6 @@
     padding: 14px 17px
     border-radius: 10px
     background: #504B4A
-
 .header
     display: flex
     justify-content: space-between
@@ -20,13 +19,28 @@
     color: white
     gap: 50px
     height: 100px
+    @media screen and (max-width: 930px)
+        .btn__contact
+            display: none
+        .line
+            display: none
+        .header__btn
+            padding: 20px 10px
+        .contact
+            display: none
+        .hamburger
+            display: block
+        .header__menu
+            display: block
+        .header__phone-number
+            display: none
+    @media screen and (max-width: 660px)
+        flex-wrap: wrap
+        gap: 10px
+        .header__search
+            flex-basis: 100%
+            order: 2
 
-.header-box1,.header-box2
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-grow: 1
-    gap: 50px
 
 .header__phone-number
     display: flex
@@ -41,13 +55,13 @@
 .contact
     background: #618967
     padding: 10px
-    border-radius: 50% 
+    border-radius: 50%
 
 .btn__contact
     background: #ffffff
     color: #618967
     padding: 10px 13px
-    border-radius: 50% 
+    border-radius: 50%
 
 .line
     min-height: 40px

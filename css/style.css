@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  background: #44403F;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +59,42 @@ body {
   color: white;
   gap: 50px;
   height: 100px;
+}
+@media screen and (max-width: 930px) {
+  .header .btn__contact {
+    display: none;
+  }
+  .header .line {
+    display: none;
+  }
+  .header .header__btn {
+    padding: 20px 10px;
+  }
+  .header .contact {
+    display: none;
+  }
+  .header .hamburger {
+    display: block;
+  }
+  .header .header__menu {
+    display: block;
+  }
+  .header .header__phone-number {
+    display: none;
+  }
+}
+@media screen and (max-width: 660px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .header .header-box1, .header .header-box2 {
+    gap: 10px;
+  }
+  .header .header__search {
+    flex-basis: 100%;
+    order: 2;
+  }
 }
 
 .header-box1, .header-box2 {
@@ -109,6 +158,7 @@ body {
   font-family: "Gilroy-light";
 }
 
+<<<<<<< HEAD
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -229,6 +279,321 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+=======
+.header__hamburger {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu {
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.header__menu.is-active {
+  display: none;
+}
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #65906C;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #65906C;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--slider .hamburger-inner {
+  top: 2px;
+}
+.hamburger--slider .hamburger-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+.hamburger--slider .hamburger-inner::after {
+  top: 20px;
+}
+
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger--slider.is-active .hamburger-inner::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0;
+}
+.hamburger--slider.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+/* * Slider Reverse
+ * */
+.hamburger--slider-r .hamburger-inner {
+  top: 2px;
+}
+.hamburger--slider-r .hamburger-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+.hamburger--slider-r .hamburger-inner::after {
+  top: 20px;
+}
+
+.hamburger--slider-r.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
+}
+.hamburger--slider-r.is-active .hamburger-inner::before {
+  transform: rotate(45deg) translate3d(5.71429px, -6px, 0);
+  opacity: 0;
+}
+.hamburger--slider-r.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(90deg);
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 29px;
+}
+
+.banner {
+  margin-top: 44px;
+}
+@media screen and (max-width: 1060px) {
+  .banner .banner__card-desc {
+    margin-left: 10px;
+  }
+  .banner .banner__card-buyandprice {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .banner .banner {
+    justify-content: center;
+  }
+  .banner .banner__card-items {
+    display: block;
+    max-width: 599px;
+    max-height: 1000px;
+  }
+  .banner .banner__card-kilo {
+    margin-top: 80px;
+  }
+  .banner .banner__card-matters-quantity {
+    padding-bottom: 20px;
+  }
+  .banner .banner__card-line {
+    margin-left: 0;
+  }
+  .banner .banner__card-img {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+
+.banner__content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.banner__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #618967;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.banner__title {
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.banner__card {
+  margin-top: 28px;
+}
+
+.banner__card-picture {
+  max-width: 599px;
+  max-height: 399px;
+}
+
+.banner__card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.banner__card-items {
+  display: flex;
+  border-radius: 10px;
+  background: #504B4A;
+  max-width: 1210px;
+  max-height: 399px;
+}
+
+.banner__card-desc {
+  margin-top: 38px;
+  margin-left: 50px;
+}
+
+.banner__card-title {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.banner__card-paragraph {
+  max-width: 450px;
+}
+
+.banner__card-info {
+  color: #CFCFCF;
+  font-family: "Gilroy-light";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.banner__card-kilo {
+  margin-top: 113px;
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.banner__card-buyandprice {
+  display: flex;
+  gap: 25px;
+}
+
+.banner__btn {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gilroy-light";
+  gap: 25px;
+  background: #618967;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 35px;
+}
+
+.banner__card-price {
+  margin-top: 35px;
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.banner__card-organic-matters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 30px;
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.banner__card-line {
+  content: "";
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 612px;
+  min-height: 1px;
+  margin-left: -25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.banner__card-matters-quantity {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #FFF;
+  font-family: "Gilroy-light";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+>>>>>>> b54ac134ba24495bf3350fecaa9c2ff8ab4e1d3c
 }
 
 /*# sourceMappingURL=style.css.map */
