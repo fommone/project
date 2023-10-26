@@ -12,7 +12,6 @@
     padding: 14px 17px
     border-radius: 10px
     background: #504B4A
-
 .header
     display: flex
     justify-content: space-between
@@ -36,11 +35,13 @@
         .header__phone-number
             display: none
     @media screen and (max-width: 660px)
-        .header
-            gap: 10px
-            position: relative
+        flex-wrap: wrap
+        gap: 10px
         .header-box1, .header-box2
             gap: 10px
+        .header__search
+            flex-basis: 100%
+            order: 2
 
 .header-box1,.header-box2
     display: flex
@@ -102,3 +103,6 @@
     font-size: 1rem
     font-style: normal
     font-weight: 700
+
+    &.is-active
+        display: none

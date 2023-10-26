@@ -3,10 +3,6 @@
     @media screen and (max-width: 1060px)
         .banner__card-desc
             margin-left: 10px
-        .banner__card-organic-matters
-            gap: 10px
-        .banner__card-matters-quantity
-            gap: 25px
         .banner__card-buyandprice
             gap: 5px
     @media screen and (max-width: 930px)
@@ -105,9 +101,9 @@
     font-style: normal
     font-weight: 700
 .banner__card-organic-matters
-    display: flex
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
     margin-top: 30px
-    gap: 50px
     color: #FFF
     font-family: 'Gilroy-light'
     font-size: 0.75rem
@@ -122,8 +118,8 @@
     margin-top: 5px
     margin-bottom: 5px
 .banner__card-matters-quantity
-    display: flex
-    gap: 60px
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
     color: #FFF
     font-family: 'Gilroy-light'
     font-size: 0.75rem
