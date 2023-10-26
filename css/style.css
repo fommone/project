@@ -937,4 +937,148 @@ body {
   }
 }
 
+.map__block {
+  margin-top: 50px;
+  position: relative;
+}
+
+.map__picture {
+  max-width: 1440px;
+}
+
+.map__bg-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.map__card-loc {
+  border-radius: 15px;
+  background: #2E2B2C;
+  box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
+  max-width: 526px;
+  position: absolute;
+  top: 50px;
+  left: 109px;
+}
+
+.map__contact {
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  padding: 25px 0px 26px 43px;
+  border-bottom: 1px solid grey;
+}
+
+.map__info {
+  display: flex;
+  gap: 11px;
+  margin-top: 43.74px;
+  margin-left: 52px;
+}
+
+.map__desc {
+  color: #CFCFCF;
+  font-family: "Gilroy-light";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.map__desc-adress {
+  margin-left: 82px;
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.map__mail {
+  display: flex;
+  gap: 11px;
+  margin-top: 21px;
+  margin-left: 52px;
+}
+
+.map__gmail {
+  color: #CFCFCF;
+  font-family: "Gilroy-light";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.map__gmail-adress {
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 85px;
+  margin-bottom: 28px;
+}
+
+.map__gmail-border {
+  border-bottom: 1px solid grey;
+}
+
+.map__btn-contact {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.map__btn {
+  margin-top: 17px;
+  border: none;
+  margin-left: 52px;
+  padding: 22px 30px;
+  border-radius: 10px;
+  background: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.map__phone {
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.map__phone-desc {
+  color: #CFCFCF;
+  font-family: "Gilroy-light";
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.map__networks {
+  display: flex;
+  gap: 26px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  margin-left: 152px;
+}
+
+.map__networks-title {
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.map__networks-icons {
+  display: flex;
+  gap: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
