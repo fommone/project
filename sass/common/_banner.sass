@@ -1,25 +1,10 @@
 .banner
     margin-top: 44px
-    @media screen and (max-width: 1060px)
-        .banner__card-desc
-            margin-left: 10px
-        .banner__card-buyandprice
-            gap: 5px
     @media screen and (max-width: 930px)
-        .banner
-            justify-content: center
-        .banner__card-items
-            display: block
-            max-width: 599px
-            max-height: 1000px
-        .banner__card-kilo
-            margin-top: 80px
-        .banner__card-matters-quantity
-            padding-bottom: 20px
-        .banner__card-line
-            margin-left: 0
-        .banner__card-img
-            border-radius: 10px 10px 0px 0px
+        justify-content: center
+    @media screen and (max-width: 300px)
+        margin-top: 110px
+        position: relative
 .banner__content
     display: flex
     gap: 10px
@@ -32,31 +17,49 @@
     height: 36px
     background: #618967
     border-radius: 50%
-    color: #fff
+    @media screen and (max-width: 300px)
+        opacity: 0.8
+        position: absolute
+        top: 34px
+        left: 24px
+
 .banner__title
     color: #FFF
     font-family: 'Gilroy'
     font-size: 1.5rem
     font-style: normal
     font-weight: 600
+    @media screen and (max-width: 300px)
+        display: none
 .banner__card
     margin-top: 28px
 .banner__card-picture
     max-width: 599px
     max-height: 399px
+    @media screen and (max-width: 930px)
+        max-width: 899px
+        max-height: 899px
 .banner__card-img
     width: 100%
     height: 100%
     border-radius: 10px 0px 0px 10px
+    @media screen and (max-width: 930px)
+        border-radius: 10px 10px 0px 0px
 .banner__card-items
     display: flex
     border-radius: 10px
     background: #504B4A
-    max-width: 1210px
+    max-width: 1410px
     max-height: 399px
+    @media screen and (max-width: 930px)
+        display: block
+        max-width: 899px
+        max-height: 1000px
 .banner__card-desc
     margin-top: 38px
     margin-left: 50px
+    @media screen and (max-width: 1060px)
+        margin-left: 10px
 .banner__card-title
     color: #fff
     font-family: 'Gilroy'
@@ -78,9 +81,13 @@
     font-size: 0.875rem
     font-style: normal
     font-weight: 400
+    @media screen and (max-width: 930px)
+        margin-top: 80px
 .banner__card-buyandprice
     display: flex
     gap: 25px
+    @media screen and (max-width: 1060px)
+        gap: 5px
 .banner__btn
     margin-top: 22px
     display: flex
@@ -117,6 +124,8 @@
     margin-left: -25px
     margin-top: 5px
     margin-bottom: 5px
+    @media screen and (max-width: 930px)
+        margin-left: 0
 .banner__card-matters-quantity
     display: grid
     grid-template-columns: repeat(5, 1fr)
@@ -125,11 +134,5 @@
     font-size: 0.75rem
     font-style: normal
     font-weight: 500
-.banner__card-fat-quantity
-    // margin-left: 60px
-.banner__card-carbohydrate-quantity
-    // margin-left: 63px
-.banner__card-kcal-quantity
-    // margin-left: 75px
-.banner__card-weight-quantity
-    // margin-left: 57px
+    @media screen and (max-width: 930px)
+        padding-bottom: 20px
