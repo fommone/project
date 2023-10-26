@@ -11,6 +11,14 @@
       <div class="container">
         <header class="header">
           <div class="header-box1">
+            <div class="header__hamburger">
+              <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+              <div class="header__menu">Меню</div>
+            </div>
             <h1 class="header__title">LOGOS</h1>
             <div class="header__search">
               <img
@@ -105,6 +113,7 @@
                 <span class="banner__card-kcal">Ккал</span>
                 <span class="banner__card-weight">Вес</span>
               </div>
+              <div class="banner__card-line"></div>
               <div class="banner__card-matters-quantity">
                 <span class="banner__card-protein-quantity">17.23</span>
                 <span class="banner__card-fat-quantity">7.63</span>
@@ -117,5 +126,16 @@
         </div>
       </div>
     </section>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
   </body>
 </html>

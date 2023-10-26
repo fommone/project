@@ -1,6 +1,29 @@
 .banner
     margin-top: 44px
-    margin-left: 117px
+    @media screen and (max-width: 1060px)
+        .banner__card-desc
+            margin-left: 10px
+        .banner__card-organic-matters
+            gap: 10px
+        .banner__card-matters-quantity
+            gap: 25px
+        .banner__card-buyandprice
+            gap: 5px
+    @media screen and (max-width: 930px)
+        .banner
+            justify-content: center
+        .banner__card-items
+            display: block
+            max-width: 599px
+            max-height: 1000px
+        .banner__card-kilo
+            margin-top: 80px
+        .banner__card-matters-quantity
+            padding-bottom: 20px
+        .banner__card-line
+            margin-left: 0
+        .banner__card-img
+            border-radius: 10px 10px 0px 0px
 .banner__content
     display: flex
     gap: 10px
@@ -22,7 +45,12 @@
     font-weight: 600
 .banner__card
     margin-top: 28px
+.banner__card-picture
+    max-width: 599px
+    max-height: 399px
 .banner__card-img
+    width: 100%
+    height: 100%
     border-radius: 10px 0px 0px 10px
 .banner__card-items
     display: flex
@@ -56,7 +84,6 @@
     font-weight: 400
 .banner__card-buyandprice
     display: flex
-    // align-items: center  
     gap: 25px
 .banner__btn
     margin-top: 22px
@@ -86,18 +113,27 @@
     font-size: 0.75rem
     font-style: normal
     font-weight: 300
+.banner__card-line
+    content: ''
+    background: rgba(255, 255, 255, 0.10)
+    max-width: 612px
+    min-height: 1px
+    margin-left: -25px
+    margin-top: 5px
+    margin-bottom: 5px
 .banner__card-matters-quantity
     display: flex
+    gap: 60px
     color: #FFF
     font-family: 'Gilroy-light'
     font-size: 0.75rem
     font-style: normal
     font-weight: 500
 .banner__card-fat-quantity
-    margin-left: 60px
+    // margin-left: 60px
 .banner__card-carbohydrate-quantity
-    margin-left: 63px
+    // margin-left: 63px
 .banner__card-kcal-quantity
-    margin-left: 75px
+    // margin-left: 75px
 .banner__card-weight-quantity
-    margin-left: 57px
+    // margin-left: 57px

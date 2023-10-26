@@ -20,6 +20,27 @@
     color: white
     gap: 50px
     height: 100px
+    @media screen and (max-width: 930px)
+        .btn__contact
+            display: none
+        .line
+            display: none
+        .header__btn
+            padding: 20px 10px
+        .contact
+            display: none
+        .hamburger
+            display: block
+        .header__menu
+            display: block
+        .header__phone-number
+            display: none
+    @media screen and (max-width: 660px)
+        .header
+            gap: 10px
+            position: relative
+        .header-box1, .header-box2
+            gap: 10px
 
 .header-box1,.header-box2
     display: flex
@@ -71,3 +92,13 @@
 ::placeholder
     width: 100%
     font-family: 'Gilroy-light'
+.header__hamburger
+    display: block
+    justify-content: center
+    align-items: center
+.header__menu
+    color: #FFF
+    font-family: 'Gilroy-light'
+    font-size: 1rem
+    font-style: normal
+    font-weight: 700
