@@ -158,7 +158,6 @@ body {
   font-family: "Gilroy-light";
 }
 
-<<<<<<< HEAD
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -279,7 +278,8 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-=======
+}
+
 .header__hamburger {
   display: block;
   justify-content: center;
@@ -593,7 +593,6 @@ body {
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
->>>>>>> b54ac134ba24495bf3350fecaa9c2ff8ab4e1d3c
 }
 
 /*# sourceMappingURL=style.css.map */
