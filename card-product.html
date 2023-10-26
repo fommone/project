@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="header__hamburger">
+            <button class="hamburger hamburger--slider" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <div class="header__menu">Меню</div>
+          </div>
+          <h1 class="header__title">LOGOS</h1>
+          <div class="header__search">
+            <img
+              src="./img/icons/Location.svg"
+              alt=""
+              class="header__location"
+            />
+            <label
+              ><input
+                class="search__field"
+                type="search"
+                placeholder="Введите адрес доставки"
+            /></label>
+            <img
+              src="./img/icons/Search.svg"
+              alt=""
+              class="header__search-btn"
+            />
+          </div>
+          <div class="header__phone-number">
+            <img class="contact" src="img/icons/Calling.svg" alt="" />
+            <div>
+              <p>Контакты:</p>
+              <b>+7 (917) 510-57-59</b>
+            </div>
+          </div>
+          <button class="header__btn">
+            <b>Корзина</b>
+            <span class="line"></span>
+            <span class="btn__contact">4</span>
+          </button>
+        </header>
+      </div>
+    </div>
+    <section class="banner">
+      <div class="container">
+        <div class="banner__content">
+          <div class="banner__arrow">
+            <svg
+              class=""
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="20"
+              id="arrow"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.634.292a1.063 1.063 0 0 0-1.464 0L.607 8.556a1.95 1.95 0 0 0 0 2.827l8.625 8.325c.4.385 1.048.39 1.454.01a.975.975 0 0 0 .01-1.425l-7.893-7.617a.975.975 0 0 1 0-1.414l7.83-7.557a.974.974 0 0 0 0-1.413"
+                style="fill: #fff"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="banner__title">Вернуться назад</h3>
+        </div>
+      </div>
+      <div class="banner__card">
+        <div class="container">
+          <div class="banner__card-items">
+            <div class="banner__card-picture">
+              <img
+                class="banner__card-img"
+                src="./img/Rectangle 7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="banner__card-desc">
+              <div class="banner__card-title">Ягненок</div>
+              <div class="banner__card-paragraph">
+                <p class="banner__card-info">
+                  помидор, сыр фета, масло подсолнечное, капуста пекинская,
+                  перец сладкий красный, огурцы, оливки без косточек
+                </p>
+              </div>
+              <div class="banner__card-kilo">Вес: 210 г</div>
+              <div class="banner__card-buyandprice">
+                <button class="banner__btn">
+                  <b>Корзина</b>
+                  <span class="line"></span>
+                  <span class="banner__btn-icon"
+                    ><img src="./img/icons/shopping-bag.svg" alt=""
+                  /></span>
+                </button>
+                <span class="banner__card-price">259 ₽</span>
+              </div>
+              <div class="banner__card-organic-matters">
+                <span class="banner__card-protein">Белки</span>
+                <span class="banner__card-fat">Жиры</span>
+                <span class="banner__card-carbohydrate">Углеводы</span>
+                <span class="banner__card-kcal">Ккал</span>
+                <span class="banner__card-weight">Вес</span>
+              </div>
+              <div class="banner__card-line"></div>
+              <div class="banner__card-matters-quantity">
+                <span class="banner__card-protein-quantity">17.23</span>
+                <span class="banner__card-fat-quantity">7.63</span>
+                <span class="banner__card-carbohydrate-quantity">22.35</span>
+                <span class="banner__card-kcal-quantity">234</span>
+                <span class="banner__card-weight-quantity">210 г</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      var header__menu = document.querySelector(".header__menu");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        header__menu.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
+  </body>
+</html>
