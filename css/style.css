@@ -360,6 +360,151 @@ body {
   max-width: 700px;
 }
 
+.stock__container {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .stock__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.stock__container img {
+  width: 100%;
+}
+
+.grid__item-info {
+  padding: 25px;
+  width: 100%;
+}
+
+.grid-item {
+  background: #504B4A;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.grid__title {
+  color: #FFF;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.grid__data {
+  color: #6FA076;
+  font-family: "Gilroy-light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.grid__text {
+  color: #A6A7AB;
+  font-family: "Gilroy-light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.stock__section {
+  margin-top: 100px;
+  background-image: url(../img/Rectangle\ 245.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding: 75px 0px 0px 0px;
+}
+
+.stock__box {
+  max-width: 700px;
+  border-radius: 15px;
+  background: #2E2B2C;
+  box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
+  padding: 0px 50px 50px 50px;
+}
+
+.stock__box-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.stock__box-title {
+  color: #CFCFCF;
+  font-family: "gilroy-light";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 25px;
+}
+
+.stock__box-text {
+  color: #fff;
+  font-family: "gilroy";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stock__top {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.stock__number {
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.stock__num {
+  color: #CFCFCF;
+  font-family: Gilroy-light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stock__button {
+  background: #72A479;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: Gilroy;
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+
+.stock__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.stock__links img {
+  width: 30px;
+}
+
 .footer {
   background: linear-gradient(271deg, #44403F 0.4%, #211F20 100%);
 }
