@@ -950,15 +950,33 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+@media screen and (max-width: 930px) {
+  .map__bg-img {
+    display: none;
+  }
+}
 
 .map__card-loc {
   border-radius: 15px;
   background: #2E2B2C;
   box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
   max-width: 526px;
+  max-height: 605px;
   position: absolute;
   top: 50px;
   left: 109px;
+}
+@media screen and (max-width: 1390px) {
+  .map__card-loc {
+    max-height: 305px;
+    top: 10px;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 1390px) and (max-width: 930px) {
+  .map__card-loc {
+    max-width: 826px;
+  }
 }
 
 .map__contact {
@@ -970,12 +988,28 @@ body {
   padding: 25px 0px 26px 43px;
   border-bottom: 1px solid grey;
 }
+@media screen and (max-width: 1390px) {
+  .map__contact {
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+}
 
 .map__info {
   display: flex;
   gap: 11px;
   margin-top: 43.74px;
   margin-left: 52px;
+}
+@media screen and (max-width: 1390px) {
+  .map__info {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .map__info {
+    margin-left: 25px;
+  }
 }
 
 .map__desc {
@@ -994,12 +1028,27 @@ body {
   font-style: normal;
   font-weight: 600;
 }
+@media screen and (max-width: 930px) {
+  .map__desc-adress {
+    margin-left: 52px;
+  }
+}
 
 .map__mail {
   display: flex;
   gap: 11px;
   margin-top: 21px;
   margin-left: 52px;
+}
+@media screen and (max-width: 1390px) {
+  .map__mail {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1390px) and (max-width: 930px) {
+  .map__mail {
+    margin-left: 25px;
+  }
 }
 
 .map__gmail {
@@ -1019,9 +1068,24 @@ body {
   margin-left: 85px;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 1390px) {
+  .map__gmail-adress {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .map__gmail-adress {
+    margin-left: 52px;
+  }
+}
 
 .map__gmail-border {
   border-bottom: 1px solid grey;
+}
+@media screen and (max-width: 660px) {
+  .map__gmail-border {
+    border-bottom: none;
+  }
 }
 
 .map__btn-contact {
@@ -1043,6 +1107,17 @@ body {
   font-style: normal;
   font-weight: 700;
 }
+@media screen and (max-width: 660px) {
+  .map__btn {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .map__btn {
+    margin-top: 0;
+    display: none;
+  }
+}
 
 .map__phone {
   color: #FFF;
@@ -1050,6 +1125,11 @@ body {
   font-size: 1.4375rem;
   font-style: normal;
   font-weight: 700;
+}
+@media screen and (max-width: 660px) {
+  .map__phone {
+    display: none;
+  }
 }
 
 .map__phone-desc {
@@ -1059,6 +1139,11 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+@media screen and (max-width: 660px) {
+  .map__phone-desc {
+    display: none;
+  }
+}
 
 .map__networks {
   display: flex;
@@ -1066,6 +1151,16 @@ body {
   margin-top: 30px;
   margin-bottom: 24px;
   margin-left: 152px;
+}
+@media screen and (max-width: 660px) {
+  .map__networks {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .map__networks {
+    display: none;
+  }
 }
 
 .map__networks-title {
