@@ -1,6 +1,6 @@
 body {
   font-family: "Gilroy";
-  background: #44403F;
+  background: #44403f;
 }
 
 .container {
@@ -19,7 +19,6 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-ExtraBold.otf);
@@ -42,7 +41,7 @@ body {
   flex-grow: 1;
   padding: 14px 17px;
   border-radius: 10px;
-  background: #504B4A;
+  background: #504b4a;
 }
 @media screen and (max-width: 660px) {
   .header__search {
@@ -84,12 +83,14 @@ body {
   }
 }
 
-.header__phone-number, .btn__basket,
+.header__phone-number,
+.btn__basket,
 .header__title {
   font-family: "Gilroy";
 }
 @media screen and (max-width: 300px) {
-  .header__phone-number, .btn__basket,
+  .header__phone-number,
+  .btn__basket,
   .header__title {
     margin-right: 50px;
   }
@@ -227,7 +228,7 @@ body {
 }
 
 .header__menu {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy-light";
   font-size: 1rem;
   font-style: normal;
@@ -262,7 +263,7 @@ body {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #65906C;
+  background-color: #65906c;
 }
 
 .hamburger-box {
@@ -277,17 +278,20 @@ body {
   top: 50%;
   margin-top: -2px;
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #65906C;
+  background-color: #65906c;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
   content: "";
   display: block;
 }
@@ -428,7 +432,7 @@ body {
 }
 
 .banner__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1.5rem;
   font-style: normal;
@@ -474,7 +478,7 @@ body {
 .banner__card-items {
   display: flex;
   border-radius: 10px;
-  background: #504B4A;
+  background: #504b4a;
   max-width: 1410px;
   max-height: 399px;
 }
@@ -509,7 +513,7 @@ body {
 }
 
 .banner__card-info {
-  color: #CFCFCF;
+  color: #cfcfcf;
   font-family: "Gilroy-light";
   font-size: 0.875rem;
   font-style: normal;
@@ -518,7 +522,7 @@ body {
 
 .banner__card-kilo {
   margin-top: 113px;
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy-light";
   font-size: 0.875rem;
   font-style: normal;
@@ -556,7 +560,7 @@ body {
 
 .banner__card-price {
   margin-top: 28px;
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1.5625rem;
   font-style: normal;
@@ -567,7 +571,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 30px;
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy-light";
   font-size: 0.75rem;
   font-style: normal;
@@ -592,7 +596,7 @@ body {
 .banner__card-matters-quantity {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy-light";
   font-size: 0.75rem;
   font-style: normal;
@@ -621,7 +625,7 @@ body {
 }
 
 .card__slider-title {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 2rem;
   font-style: normal;
@@ -654,7 +658,7 @@ body {
   max-width: 325px;
   margin-top: 50px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
 }
 @media screen and (max-width: 1260px) {
   .card__items {
@@ -712,7 +716,7 @@ body {
 }
 
 .card__info {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1.375rem;
   font-style: normal;
@@ -720,7 +724,7 @@ body {
 }
 
 .card__weight {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy-light";
   font-size: 0.75rem;
   font-style: normal;
@@ -730,7 +734,7 @@ body {
 .card__desc {
   margin-top: 5px;
   margin-left: 20px;
-  color: #CFCFCF;
+  color: #cfcfcf;
   font-family: "Gilroy-light";
   font-size: 0.8125rem;
   font-style: normal;
@@ -864,7 +868,7 @@ body {
 }
 
 .card__price {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1.25rem;
   font-style: normal;
@@ -951,7 +955,7 @@ body {
 
 .map__card-loc {
   border-radius: 15px;
-  background: #2E2B2C;
+  background: #2e2b2c;
   box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
   max-width: 526px;
   max-height: 605px;
@@ -973,7 +977,7 @@ body {
 }
 
 .map__contact {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1.875rem;
   font-style: normal;
@@ -1006,7 +1010,7 @@ body {
 }
 
 .map__desc {
-  color: #CFCFCF;
+  color: #cfcfcf;
   font-family: "Gilroy-light";
   font-size: 0.875rem;
   font-style: normal;
@@ -1015,7 +1019,7 @@ body {
 
 .map__desc-adress {
   margin-left: 82px;
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1rem;
   font-style: normal;
@@ -1045,7 +1049,7 @@ body {
 }
 
 .map__gmail {
-  color: #CFCFCF;
+  color: #cfcfcf;
   font-family: "Gilroy-light";
   font-size: 0.875rem;
   font-style: normal;
@@ -1053,7 +1057,7 @@ body {
 }
 
 .map__gmail-adress {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1rem;
   font-style: normal;
@@ -1093,8 +1097,8 @@ body {
   margin-left: 52px;
   padding: 22px 30px;
   border-radius: 10px;
-  background: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
-  color: #FFF;
+  background: linear-gradient(115deg, #618967 5.11%, #72a479 94%);
+  color: #fff;
   font-family: "Gilroy";
   font-size: 0.8125rem;
   font-style: normal;
@@ -1113,7 +1117,7 @@ body {
 }
 
 .map__phone {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1.4375rem;
   font-style: normal;
@@ -1126,7 +1130,7 @@ body {
 }
 
 .map__phone-desc {
-  color: #CFCFCF;
+  color: #cfcfcf;
   font-family: "Gilroy-light";
   font-size: 0.8125rem;
   font-style: normal;
@@ -1157,7 +1161,7 @@ body {
 }
 
 .map__networks-title {
-  color: #FFF;
+  color: #fff;
   font-family: "Gilroy";
   font-size: 1rem;
   font-style: normal;
