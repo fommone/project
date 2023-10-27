@@ -154,6 +154,11 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 660px) {
+  .header__menu {
+    top: 80px;
+  }
+}
 @media screen and (max-width: 300px) {
   .header__menu {
     top: 70px;
